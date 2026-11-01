@@ -4,9 +4,13 @@ Turn rough meeting notes into a handoff you can actually use: **reviewed tasks, 
 
 Paste notes or import a `.txt`/`.md` file. Antseed supplies the model call; the app extracts tasks, decisions and unresolved questions. Each item links to an exact quote from the notes. You edit owners and dates, then choose which tasks to include in the exports.
 
-[Watch the 42-second walkthrough](media/meeting-actions-demo.mp4) · [Transcript](media/transcript.txt)
+## 42-second walkthrough
 
-![Review meeting actions with their source notes](evidence/task-review.png)
+https://github.com/user-attachments/assets/d05bec33-c9b7-47e0-9bab-9422f082a950
+
+[Download the MP4](media/meeting-actions-demo.mp4) · [Transcript](media/transcript.txt)
+
+![The reviewed follow-up and export options](evidence/handoff.png)
 
 ## Try the sample
 
