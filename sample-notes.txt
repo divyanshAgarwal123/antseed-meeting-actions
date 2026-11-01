@@ -1,0 +1,11 @@
+SAMPLE DATA — fictional campus-demo planning notes
+Meeting date: 2026-11-02
+
+We agreed on a 45-minute campus session: 10 minutes intro, 20 minutes live demo, then 15 minutes Q&A.
+Divyansh will prepare the five-slide outline by 2026-11-04.
+Asha said she'll check seminar room availability by 2026-11-05.
+Rohan will test the free model setup before the rehearsal. We haven't fixed the rehearsal date yet.
+Need to confirm the guest's availability. Nobody picked this up.
+We still haven't decided which backup model to use if the first provider is unavailable.
+Don't publish the registration link until the guest and room are confirmed.
+Divyansh will send the follow-up after the room check.

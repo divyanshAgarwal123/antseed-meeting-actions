@@ -1,0 +1,9 @@
+Meeting Actions turns messy meeting notes into a task handoff you can use. It runs on Antseed's free APIs.
+
+Paste notes or import text. The model extracts actions, decisions and open questions, with quotes so you can check the source.
+
+Missing owners and vague dates stay unresolved. The app does not guess who should do the work or invent a date.
+
+You edit the fields, then choose which tasks to include. In this example, the missing owner and date are human choices.
+
+Download a task CSV, a calendar file, or a follow-up draft. Exports are generated locally from your included tasks. Nothing is sent automatically.

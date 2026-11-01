@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Turn meeting notes into reviewed tasks, calendar dates and a follow-up draft using Antseed."
+    />
+    <title>Meeting Actions · Built on Antseed</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#notes">Skip to meeting notes</a>
+    <main>
+      <header>
+        <a class="brand" href="/"
+          >Meeting Actions<span>Built on Antseed</span></a
+        ><a
+          href="https://github.com/divyanshAgarwal123/antseed-meeting-actions"
+          target="_blank"
+          rel="noreferrer"
+          >Code &amp; evidence ↗</a
+        >
+      </header>
+      <section class="intro">
+        <p class="eyebrow">From conversation to follow-through</p>
+        <h1>Leave the meeting<br />with a clear plan.</h1>
+        <p>
+          Paste your notes. Review who owns each task and when it is due. Take
+          away a task list, calendar dates and a follow-up draft.
+        </p>
+      </section>
+      <section class="input-panel" aria-labelledby="notes-heading">
+        <div class="input-head">
+          <div>
+            <p class="eyebrow">01 / Capture</p>
+            <h2 id="notes-heading">What did you agree on?</h2>
+          </div>
+          <label class="date-label" for="meeting-date"
+            >Meeting date<input type="date" id="meeting-date" required
+          /></label>
+        </div>
+        <div class="input-tools">
+          <button id="sample" class="text-button" type="button">
+            Load sample meeting</button
+          ><label class="upload" for="file"
+            >Import .txt or .md<input
+              id="file"
+              type="file"
+              accept=".txt,.md,text/plain,text/markdown" /></label
+          ><button id="recorded" class="text-button" type="button">
+            View recorded Antseed run</button
+          ><span id="count">0 / 12000</span>
+        </div>
+        <label class="sr-only" for="notes">Meeting notes</label
+        ><textarea
+          id="notes"
+          maxlength="12000"
+          placeholder="Paste rough notes, names, decisions and follow-ups. It is fine if some owners or dates are missing."
+        ></textarea>
+        <div class="submit-row">
+          <button id="extract" type="button" disabled>
+            Make an action plan
+          </button>
+          <p>
+            Your notes go to an independent Antseed provider.<br />Use notes you
+            are allowed to share.
+          </p>
+        </div>
+        <details class="connection">
+          <summary id="connection-label">
+            Checking your Antseed connection…
+          </summary>
+          <div>
+            <label for="offer">Free model for this run</label
+            ><select id="offer" disabled>
+              <option value="">Automatic free selection</option></select
+            ><button id="refresh" class="text-button" type="button">
+              Refresh offers
+            </button>
+          </div>
+          <p id="offer-detail"></p>
+          <small
+            >Only advertised zero-priced chat offers, score 60+, no staking.
+            Each call is pinned to the chosen peer. Availability and quotas can
+            change.</small
+          >
+        </details>
+      </section>
+      <div id="progress" class="notice" role="status" aria-live="polite" hidden>
+        <span id="progress-text">Finding tasks and decisions…</span
+        ><span id="elapsed">0s</span>
+      </div>
+      <section id="error" class="notice error" role="alert" hidden>
+        <h2 id="error-title"></h2>
+        <p id="error-action"></p>
+        <dl id="limits" hidden></dl>
+      </section>
+      <section id="results" hidden aria-labelledby="plan-title">
+        <div id="recorded-banner" class="notice" hidden>
+          Recorded Antseed output from 2 November 2026. No new model call was
+          made. Your edits and exports are local.
+        </div>
+        <div class="result-head">
+          <div>
+            <p class="eyebrow">02 / Review before you commit</p>
+            <h2 id="plan-title"></h2>
+          </div>
+          <button id="new-meeting" class="text-button" type="button">
+            Start another meeting
+          </button>
+        </div>
+        <div id="stats" class="stats" aria-live="polite"></div>
+        <p id="warnings" class="notice" hidden></p>
+        <div class="review-head">
+          <h3>Tasks to review</h3>
+          <button id="confirm-ready" class="text-button" type="button">
+            Confirm tasks with an owner + date
+          </button>
+        </div>
+        <p class="hint">
+          Check the source note, edit anything wrong, then tick Include. Assign
+          missing owners; vague dates stay blank until you choose one.
+        </p>
+        <div id="tasks"></div>
+        <p id="empty-tasks" class="notice" hidden>
+          No explicit actions were found. Review the decisions and open
+          questions below.
+        </p>
+        <div class="context-grid">
+          <section>
+            <h3>Decisions &amp; constraints</h3>
+            <div id="decisions"></div>
+          </section>
+          <section>
+            <h3>Open questions</h3>
+            <div id="questions"></div>
+          </section>
+        </div>
+        <section class="handoff" aria-labelledby="handoff-heading">
+          <p class="eyebrow">03 / Take it with you</p>
+          <h2 id="handoff-heading">A handoff you can use.</h2>
+          <p id="export-status">
+            Confirm at least one task with an owner to create your handoff.
+          </p>
+          <div class="export-buttons">
+            <button id="csv" class="secondary" type="button" disabled>
+              Download task CSV</button
+            ><button id="calendar" class="secondary" type="button" disabled>
+              Download calendar .ics</button
+            ><button
+              id="draft-download"
+              class="secondary"
+              type="button"
+              disabled
+            >
+              Download follow-up
+            </button>
+          </div>
+          <small
+            >Only included tasks are exported. Calendar files contain only
+            included tasks with a valid date, as all-day events.</small
+          >
+          <label for="followup"
+            >Follow-up draft
+            <span>Review before copying or sending.</span></label
+          ><textarea
+            id="followup"
+            readonly
+            placeholder="Your follow-up draft will appear after you confirm tasks."
+          ></textarea
+          ><button id="copy" class="text-button" type="button" disabled>
+            Copy draft</button
+          ><span id="copy-status" role="status"></span>
+        </section>
+        <details class="technical">
+          <summary>Antseed request details &amp; evidence</summary>
+          <p id="request-meta"></p>
+          <p>
+            Source checks verify quoted text exists in the notes. They do not
+            prove the model interpreted the agreement correctly.
+          </p>
+          <button id="save-json" class="text-button" type="button">
+            Save run JSON
+          </button>
+          <pre id="raw"></pre>
+        </details>
+      </section>
+      <footer>
+        A local app. No meeting notes are saved on the server. AI extracts a
+        draft; you confirm commitments. Exports and follow-up drafts are created
+        locally without more model calls.
+      </footer>
+    </main>
+    <script src="/exports.js"></script>
+    <script src="/app.js"></script>
+  </body>
+</html>

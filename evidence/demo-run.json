@@ -1,0 +1,224 @@
+{
+  "input": {
+    "notes": "SAMPLE DATA — fictional campus-demo planning notes\nMeeting date: 2026-11-02\n\nWe agreed on a 45-minute campus session: 10 minutes intro, 20 minutes live demo, then 15 minutes Q&A.\nDivyansh will prepare the five-slide outline by 2026-11-04.\nAsha said she'll check seminar room availability by 2026-11-05.\nRohan will test the free model setup before the rehearsal. We haven't fixed the rehearsal date yet.\nNeed to confirm the guest's availability. Nobody picked this up.\nWe still haven't decided which backup model to use if the first provider is unavailable.\nDon't publish the registration link until the guest and room are confirmed.\nDivyansh will send the follow-up after the room check.",
+    "meeting_date": "2026-11-02"
+  },
+  "result": {
+    "plan": {
+      "title": "Campus Demo Session Planning",
+      "tasks": [
+        {
+          "id": "task-1",
+          "title": "Prepare the five-slide outline by 2026-11-04",
+          "owner": "Divyansh",
+          "due_text": "by 2026-11-04",
+          "due_date": "2026-11-04",
+          "source": "Divyansh will prepare the five-slide outline by 2026-11-04.",
+          "flags": [],
+          "confirmed": false
+        },
+        {
+          "id": "task-2",
+          "title": "Check seminar room availability by 2026-11-05",
+          "owner": "Asha",
+          "due_text": "by 2026-11-05",
+          "due_date": "2026-11-05",
+          "source": "Asha said she'll check seminar room availability by 2026-11-05.",
+          "flags": [],
+          "confirmed": false
+        },
+        {
+          "id": "task-3",
+          "title": "Test the free model setup before the rehearsal",
+          "owner": "Rohan",
+          "due_text": "before the rehearsal",
+          "due_date": null,
+          "source": "Rohan will test the free model setup before the rehearsal.",
+          "flags": [],
+          "confirmed": false
+        },
+        {
+          "id": "task-4",
+          "title": "Send the follow-up after the room check",
+          "owner": "Divyansh",
+          "due_text": "after the room check",
+          "due_date": null,
+          "source": "Divyansh will send the follow-up after the room check.",
+          "flags": [],
+          "confirmed": false
+        },
+        {
+          "id": "task-5",
+          "title": "Confirm the guest's availability (unassigned)",
+          "owner": null,
+          "due_text": null,
+          "due_date": null,
+          "source": "Need to confirm the guest's availability. Nobody picked this up.",
+          "flags": [],
+          "confirmed": false
+        }
+      ],
+      "decisions": [
+        {
+          "text": "45-minute campus session: 10 minutes intro, 20 minutes live demo, then 15 minutes Q&A",
+          "source": "We agreed on a 45-minute campus session: 10 minutes intro, 20 minutes live demo, then 15 minutes Q&A."
+        },
+        {
+          "text": "Do not publish the registration link until the guest and room are confirmed",
+          "source": "Don't publish the registration link until the guest and room are confirmed."
+        }
+      ],
+      "open_questions": [
+        {
+          "text": "Rehearsal date not yet fixed",
+          "source": "We haven't fixed the rehearsal date yet."
+        },
+        {
+          "text": "Backup model to use if the first provider is unavailable not yet decided",
+          "source": "We still haven't decided which backup model to use if the first provider is unavailable."
+        }
+      ],
+      "warnings": [],
+      "meeting_date": "2026-11-02"
+    },
+    "offer": {
+      "id": "73b4c9335fa239f9c6df3d28d5bf5d3cdf4de736@xiaomi/mimo-v2.6-flash",
+      "model": "xiaomi/mimo-v2.6-flash",
+      "peer": "73b4c9335fa239f9c6df3d28d5bf5d3cdf4de736",
+      "service_id": "mimo-v2.6-flash",
+      "max_output_tokens": null,
+      "provider": "Apex Ant",
+      "reputation": 72.2,
+      "accepts_image": true,
+      "input_usd_per_million": 0,
+      "output_usd_per_million": 0
+    },
+    "response": {
+      "status": 200,
+      "seconds": 13.76,
+      "peer": "73b4c9335fa239f9c6df3d28d5bf5d3cdf4de736",
+      "model": "xiaomi-mimo-v2-6-flash",
+      "usage": {
+        "prompt_tokens": 2076,
+        "completion_tokens": 798,
+        "total_tokens": 2874,
+        "prompt_tokens_details": {
+          "cached_tokens": 1632
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 370
+        }
+      }
+    },
+    "attempts": [
+      {
+        "offer": {
+          "id": "73b4c9335fa239f9c6df3d28d5bf5d3cdf4de736@xiaomi/mimo-v2.6-flash",
+          "model": "xiaomi/mimo-v2.6-flash",
+          "peer": "73b4c9335fa239f9c6df3d28d5bf5d3cdf4de736",
+          "service_id": "mimo-v2.6-flash",
+          "max_output_tokens": null,
+          "provider": "Apex Ant",
+          "reputation": 72.2,
+          "accepts_image": true,
+          "input_usd_per_million": 0,
+          "output_usd_per_million": 0
+        },
+        "status": 200,
+        "seconds": 13.76,
+        "peer": "73b4c9335fa239f9c6df3d28d5bf5d3cdf4de736",
+        "model": "xiaomi-mimo-v2-6-flash",
+        "usage": {
+          "prompt_tokens": 2076,
+          "completion_tokens": 798,
+          "total_tokens": 2874,
+          "prompt_tokens_details": {
+            "cached_tokens": 1632
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 370
+          }
+        }
+      }
+    ],
+    "mode": "live",
+    "completed_at": "2026-11-01T22:02:30.746427+00:00"
+  },
+  "reviewed_plan": {
+    "title": "Campus Demo Session Planning",
+    "tasks": [
+      {
+        "id": "task-1",
+        "title": "Prepare the five-slide outline by 2026-11-04",
+        "owner": "Divyansh",
+        "due_text": "by 2026-11-04",
+        "due_date": "2026-11-04",
+        "source": "Divyansh will prepare the five-slide outline by 2026-11-04.",
+        "flags": [],
+        "confirmed": false
+      },
+      {
+        "id": "task-2",
+        "title": "Check seminar room availability by 2026-11-05",
+        "owner": "Asha",
+        "due_text": "by 2026-11-05",
+        "due_date": "2026-11-05",
+        "source": "Asha said she'll check seminar room availability by 2026-11-05.",
+        "flags": [],
+        "confirmed": false
+      },
+      {
+        "id": "task-3",
+        "title": "Test the free model setup before the rehearsal",
+        "owner": "Rohan",
+        "due_text": "before the rehearsal",
+        "due_date": null,
+        "source": "Rohan will test the free model setup before the rehearsal.",
+        "flags": [],
+        "confirmed": false
+      },
+      {
+        "id": "task-4",
+        "title": "Send the follow-up after the room check",
+        "owner": "Divyansh",
+        "due_text": "after the room check",
+        "due_date": null,
+        "source": "Divyansh will send the follow-up after the room check.",
+        "flags": [],
+        "confirmed": false
+      },
+      {
+        "id": "task-5",
+        "title": "Confirm the guest's availability (unassigned)",
+        "owner": null,
+        "due_text": null,
+        "due_date": null,
+        "source": "Need to confirm the guest's availability. Nobody picked this up.",
+        "flags": [],
+        "confirmed": false
+      }
+    ],
+    "decisions": [
+      {
+        "text": "45-minute campus session: 10 minutes intro, 20 minutes live demo, then 15 minutes Q&A",
+        "source": "We agreed on a 45-minute campus session: 10 minutes intro, 20 minutes live demo, then 15 minutes Q&A."
+      },
+      {
+        "text": "Do not publish the registration link until the guest and room are confirmed",
+        "source": "Don't publish the registration link until the guest and room are confirmed."
+      }
+    ],
+    "open_questions": [
+      {
+        "text": "Rehearsal date not yet fixed",
+        "source": "We haven't fixed the rehearsal date yet."
+      },
+      {
+        "text": "Backup model to use if the first provider is unavailable not yet decided",
+        "source": "We still haven't decided which backup model to use if the first provider is unavailable."
+      }
+    ],
+    "warnings": [],
+    "meeting_date": "2026-11-02"
+  }
+}

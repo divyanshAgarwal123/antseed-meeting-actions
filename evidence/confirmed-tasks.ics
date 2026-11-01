@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Meeting Actions//Antseed demo//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:9685869b@meeting-actions.local
+DTSTAMP:20261101T220558Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:Prepare the five-slide outline — Divyansh
+DESCRIPTION:Owner: Divyansh\nSource note: Divyansh will prepare the five-sl
+ ide outline by 2026-11-04.
+END:VEVENT
+BEGIN:VEVENT
+UID:f7eef286@meeting-actions.local
+DTSTAMP:20261101T220558Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261106
+SUMMARY:Check seminar room availability — Asha
+DESCRIPTION:Owner: Asha\nSource note: Asha said she'll check seminar room a
+ vailability by 2026-11-05.
+END:VEVENT
+BEGIN:VEVENT
+UID:3e8f9b87@meeting-actions.local
+DTSTAMP:20261101T220558Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:Confirm the guest's availability — Divyansh
+DESCRIPTION:Owner: Divyansh\nSource note: Need to confirm the guest's avail
+ ability. Nobody picked this up.
+END:VEVENT
+END:VCALENDAR

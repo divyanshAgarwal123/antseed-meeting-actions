@@ -1,0 +1,20 @@
+{
+  "captured_at": "2026-11-01T22:07:04.184644+00:00",
+  "cli_version": "0.1.222",
+  "transport": "local Antseed gateway on 18379 with buyer on 18377",
+  "requests": 3,
+  "failed_requests": 0,
+  "spent_usd": {
+    "daily": "0.000000",
+    "weekly": "0.000000",
+    "monthly": "0.000000",
+    "total": "0.000000"
+  },
+  "limits_usd": {
+    "daily": null,
+    "weekly": null,
+    "monthly": null,
+    "total": "1.000000"
+  },
+  "topup_enabled": false
+}
